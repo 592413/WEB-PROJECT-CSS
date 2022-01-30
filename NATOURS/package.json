@@ -1,0 +1,18 @@
+{
+  "name": "natours",
+  "version": "1.0.0",
+  "description": "Landing Page for Natours",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/592413/WEB-PROJECT-CSS/tree/master/NATOURS"
+  },
+  "author": "Bappaditya Dutta",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.49.0"
+  }
+}
