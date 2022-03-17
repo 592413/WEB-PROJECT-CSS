@@ -3,13 +3,13 @@
     perspective: 150rem;
     -moz-perspective: 150rem;
     position:relative;
-    height:50rem;
+    height:52rem;
 
     //Perspective should always be used in parent
 
 
     &__side{
-        height:50rem;
+        height:52rem;
         transition: all .8s ease;
         position: absolute;
         top: 0;
@@ -31,6 +31,15 @@
 
             &-1{
                 background-image: linear-gradient(to right bottom, $color-secondary-light,$color-secondary-dark);
+            }
+
+            &-2{
+                background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark);
+                
+            }
+
+            &-3{
+                background-image: linear-gradient(to right bottom, $color-tertiary-light,$color-tertiary-dark);
             }
         }
 
@@ -57,11 +66,13 @@
             ),url(../img/nat-5.jpg);
         }
         &--2{
-            background-image: url(../img/nat-5.jpg);
+            background-image: linear-gradient(to right bottom, $color-primary-light,$color-primary-dark
+            ),url(../img/nat-6.jpg);
         }
 
         &--3{
-            background-image: url(../img/nat-5.jpg);
+            background-image:linear-gradient(to right bottom, $color-tertiary-light,$color-tertiary-dark
+            ),url(../img/nat-7.jpg);
         }
     }
 
@@ -84,10 +95,25 @@
         box-decoration-break: clone;
 
         &--1{
-           
+
             background-image: linear-gradient(to right bottom,
             $color-secondary-light,
             $color-secondary-dark);
+            
+        }
+
+        &--2{
+            
+            background-image: linear-gradient(to right bottom,
+            $color-primary-light,
+            $color-primary-dark);
+        }
+
+        &--3{
+           
+            background-image: linear-gradient(to right bottom,
+            $color-tertiary-light,
+            $color-tertiary-dark);
         }
     }
 
@@ -112,6 +138,31 @@
 
         }
 
+    }
+
+    &__cta{
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        width:90%;
+        text-align: center;
+    }
+
+    &__price-box{
+        text-align: center;
+        color:$color-white;
+        margin-bottom: 8rem;
+    }
+
+    &__price-only{
+        font-size:1.4rem;
+        text-transform: uppercase;
+    }
+
+    &__price-value{
+        font-size:6rem;
+        font-weight:100;
     }
 
 }
